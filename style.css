@@ -1,0 +1,455 @@
+body {
+    width: 1920px;
+  }
+  .header {
+    display: block;
+    overflow: auto;
+    text-align: center;
+  }
+  .logo,
+  nav {
+    float: left;
+  }
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 15px;
+  }
+  a {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #274c5b;
+  }
+  .topnav-right {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    float: right;
+  }
+  .icon {
+    height: 56px;
+    width: 56px;
+    border-radius: 36px;
+    border: none;
+  }
+  /*не получилось наложить иконки на кнопки, они съехали*/
+  .searchbar {
+    height: 66px;
+    width: 376px;
+    border: none;
+    border-radius: 36px;
+    background-color: #f9f8f8;
+  }
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 70px;
+
+    color: #274c5b;
+  }
+  h3 {
+    font-family: "Yellowtail";
+    font-weight: 400;
+    font-size: 36px;
+    color: #68a47f;
+  }
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: #274c5b;
+  }
+  h5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #525c60;
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #525c60;
+  }
+  .button {
+    border-radius: 16px;
+    padding: 28px 39px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+  }
+  .button-yellow {
+    background-color: #efd372;
+    color: #274c5b;
+  }
+  .button-green {
+    background-color: #274c5b;
+    color: white;
+  }
+  .section1 {
+    background-image: url(assets/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 898px;
+  }
+  .part1 {
+    height: 405px;
+    width: 530px;
+    padding-top: 247px;
+    margin-left: 260px;
+  }
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 36px;
+    margin: 145px 260px;
+  }
+  /*Я хотела отцентровать картинки через justify-content: center; align-items: center; но ничего не изменилось. Поэтому сделала с помощью margin*/
+  .section2 img {
+    width: 682px;
+    height: 367px;
+  }
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #f9f8f8;
+    height: 1067px;
+  }
+  .part3 {
+    width: 702px;
+    height: 682px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+  .shop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  .shop img {
+    grid-area: 1/1/3/2;
+  }
+  .shop h4 {
+    grid-area: 1/2/2/3;
+  }
+  .shop p {
+    grid-area: 2/2/3/3;
+  }
+  .section4 {
+    height: 1343px;
+    text-align: center;
+  }
+  .part4 {
+    display: grid;
+    width: 1400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+  }
+  /*Я хотела отцентровать картинки через justify-content: center; align-items: center; но ничего не изменилось. Поэтому сделала с помощью margin*/
+  .section5 {
+    background-image: url(./assets/background3.png);
+    text-align: center;
+    height: 1267px;
+  }
+  .part5-top {
+    display: block;
+    margin: auto;
+    width: 780px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+  }
+  .part5-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    width: 1030px;
+    margin: auto;
+    border-top: 1px solid #E0E0E0;
+    padding: 100px;
+  }
+  .info-circle {
+    display: block;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    border: solid #7eb693 5px;
+    width: 211px;
+    height: 211px;
+    border-radius: 50%;
+
+  }
+  .numbers {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    align-items: center;
+    color: #274C5B;
+    margin-bottom: 0;
+  }
+  .text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #274C5B;
+    margin: 0;
+  }
+  .sara {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+  }
+.consumer {
+    font-size: 15px;
+}
+.section6 {
+    height: 1050px;
+    background-color: #274C5B;
+    text-align: center;
+}
+.part6 {
+    width: 1400px;
+    margin: auto;
+}
+.part6-top {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 49px 59px;
+    width: 1400px;
+    margin-left: 259px;
+    padding: 30px 0;
+    text-align: left;
+    position: relative;
+}
+.part6-top h2 {
+    color: white;
+    grid-area: 2/1/2/2;
+    padding: 0;
+    margin: 0;
+}
+.part6-top h3 {
+    grid-area: 1/1/3/2;
+    padding: 0;
+    margin: 0;
+}
+.part6-top .button {
+    width: 256px;
+    height: 79px;
+    grid-area: 1/2/3/3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.part6-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 1400px;
+    margin: auto;    
+}
+.section7 {
+    height: 931px;
+    background-image: url(./assets/background4.png);
+    background-repeat: no-repeat;
+    background-position: 0%; 
+}
+.part7 {
+    height: 723px;
+    width: 789px;
+    margin-left: 871px;
+    padding: 35px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+/*не получилось выровнять вертикально по центру*/
+.section8 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #F1F8F4;
+    width: 1920px;
+    height: 957px;
+}
+
+.txt8 {
+    width: 320px;
+    height: 96px;
+    padding: 33px 83px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: auto;
+    text-align: center;
+    font-family: 'Robot', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #274C5B;
+}
+/*у меня явные проблемы с выравниванием по вертикали. Картинки получилось выровнять , а блоки с текстом на них уже никак*/
+.frame {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    width: 612px;
+    height: 583px;
+}
+.frame1 {
+    background-image: url(assets/juice.jpg);
+}
+.frame2 {
+    background-image: url(assets/food.png);
+}
+.frame3 {
+    background-image: url(assets/cookies.png);
+}
+.part9-top {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 49px 59px;
+    width: 1400px;
+    height: 175px;
+    margin-left: 259px;
+    padding: 30px 0;
+    text-align: left;
+    position: relative;
+}
+.part9-top h2 {
+    grid-area: 2/1/2/2;
+    padding: 0;
+    margin: 0;
+}
+.part9-top h3 {
+    grid-area: 1/1/3/2;
+    padding: 0;
+    margin: 0;
+}
+.button-white {
+    width: 256px;
+    height: 79px;
+    grid-area: 1/2/3/3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #274C5B;
+}
+/*не получилось установить кнопку в правом нижнем углу. Применила тот же способ, что и в stction6, но здесь он не сработал*/
+.part9-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 1400px;
+    height: 592px;
+    margin-left: 260px;
+    padding: 50px;
+    position: relative;
+}
+/*не смогла разобраться почему с данными настройками, если контейнер выравниваю по центру границы его остаются на месте, а содержимое съезжает вправо*/
+.img-left {
+    width: 677px;
+    height: 524px;
+    position: absolute;
+}
+.txt-left {
+    width: 613px;
+    height: 330px;
+    margin-top: 250px;
+    margin-left: 32px;
+    z-index: 9;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    position: absolute;
+}
+.img-right {
+    width: 677px;
+    height: 524px;
+    position: absolute;
+    border-radius: 20px;
+}
+.txt-right {
+    width: 613px;
+    height: 330px;
+    margin-top: 260px;
+    margin-left: 32px;
+    z-index: 9;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    position: absolute;
+}
+/*получилось наложить блок с такстом не картинку каскадом, но не получилось выровнять ее горизонтально по ширине картинки, хотя указаны размеры и картинок, и блоков с текстом*/
+.section10 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(assets/background5.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 1400px;
+    height: 323px;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+.section10 h2 {
+    color: white;
+    text-align: left;   
+    padding-left: 50px;
+    grid-area: 1/1/2/2;
+}
+.subscribe {
+    grid-area: 1/2/2/3;
+    text-align: left;
+    padding: 100px;
+    margin-left: 0;
+}
+.subscribe input {
+    width: 349px;
+    height: 80px;
+    border-radius: 16px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+}
+.subscribe button {
+    width: 220px;
+    height: 80px;
+    border-radius: 16px;
+    border: none;
+    padding: 28px 47px;
+    background-color: #274C5B;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.left {
+    grid-column: 1/2;
+    text-align: right;
+    border-right: 1px solid #D4D4D4;
+    padding-right: 30px;
+}
+.center {
+    grid-column: 2/3;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.right {
+    grid-column: 3/4;
+    text-align: left;
+    border-left: 1px solid #D4D4D4;
+    padding-left: 30px;
+}
